@@ -35,6 +35,10 @@ public class Main {
                 System.out.println("システムが正常に終了しました");
                 break;
             }
+
+            else {
+                System.out.println("エラー: 存在しないコマンドです");
+            }
         }
     }
 }

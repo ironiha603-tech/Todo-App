@@ -18,7 +18,13 @@ public class Todolist {
     }
 
     public void completeTodo(int index){
-        Todo todo = todolist.get(index);
-        todo.setIsCompleted();
+        if (index >= 0 && index < todolist.size()) {
+            Todo todo = todolist.get(index);
+            todo.setIsCompleted();   
+        }
+
+        else {
+            System.out.println("エラー: 存在しないタスクです");
+        }
     }
 }
